@@ -1,0 +1,159 @@
+html, body, #root {
+  height: 100%;
+}
+body {
+  min-height: 100vh;
+  overflow-y: auto;
+}
+
+.main-content {
+  min-height: 80vh;
+  padding-bottom: 140px !important; /* Ensure main content has enough bottom padding for the fixed footer on all pages */
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Responsive container padding for all pages */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .navbar-brand {
+    font-size: 1.1rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding-left: 2px !important;
+    padding-right: 2px !important;
+  }
+  .navbar-brand {
+    font-size: 1rem !important;
+  }
+  .footer {
+    font-size: 12px !important;
+    padding: 10px 0 !important;
+  }
+}
+
+/* Responsive form width */
+@media (max-width: 576px) {
+  form {
+    padding: 10px !important;
+  }
+}
+
+/* Responsive footer */
+footer.bg-dark {
+  min-height: 60px;
+  font-size: 15px;
+  padding: 10px 0;
+}
+@media (max-width: 768px) {
+  footer.bg-dark {
+    font-size: 13px;
+    padding: 8px 0;
+  }
+}
+@media (max-width: 576px) {
+  footer.bg-dark {
+    font-size: 11px;
+    padding: 6px 0;
+  }
+}
+
+/* Responsive logo in navbar */
+.navbar-logo {
+  height: 38px;
+  width: auto;
+  margin-right: 10px;
+}
+@media (max-width: 576px) {
+  .navbar-logo {
+    height: 28px;
+    margin-right: 6px;
+  }
+}
+
+/* Responsive form elements */
+@media (max-width: 576px) {
+  .form-label, .form-control, textarea {
+    font-size: 14px !important;
+  }
+  h3 {
+    font-size: 1.2rem !important;
+  }
+}
+
+/* Responsive shadow and border for cards/forms */
+@media (max-width: 576px) {
+  .shadow {
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08) !important;
+  }
+  .border {
+    border-width: 1px !important;
+  }
+}
+
+/* Home page specific: remove extra padding from content wrapper */
+.home-content-wrapper {
+  padding-bottom: 0 !important;
+}
+
+/* Add this to App.css */
+html, body, #root {
+  height: 100%;
+}
+
+.container {
+  min-height: 80vh; /* Adjust as needed */
+}
+
+@media (min-width: 992px) {
+  #navbarNav {
+    background-color: transparent !important;
+  }
+}
